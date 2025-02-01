@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица Цен</title>
+    <style>
+        /* Общие стили страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards; /* Анимация для появления всей страницы */
+        }
+
+        /* Анимация появления всей страницы */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #00bcd4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out forwards; /* Анимация для заголовка */
+        }
+
+        /* Анимация для заголовка */
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Стили для таблицы */
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            animation: slideIn 1s ease-out forwards; /* Анимация для таблицы */
+        }
+
+        /* Анимация для таблицы */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Стили для заголовков */
+        th {
+            background: linear-gradient(45deg, #ff6f00, #ff9100);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-bottom: 3px solid #ff9100;
+            animation: fadeInHeader 1s ease-out forwards; /* Анимация для заголовков */
+        }
+
+        /* Анимация для заголовков */
+        @keyframes fadeInHeader {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Стили для ячеек таблицы */
+        td {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        /* Эффект при наведении на ячейку */
+        td:hover {
+            background-color: #ff9100;
+            color: white;
+            transform: scale(1.05);
+            animation: pulse 0.5s infinite alternate; /* Пульсация ячеек */
+        }
+
+        /* Анимация пульсации ячеек */
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Кнопка возврата */
+        .back-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeInButton 1s 1s forwards; /* Анимация для кнопки */
+        }
+
+        /* Анимация для кнопки */
+        @keyframes fadeInButton {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .back-button:hover {
+            background-color: #ff9100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Таблица Цен на 2025-2026</h1>
+    
+    <!-- Таблица с улучшенным дизайном -->
+    <table>
+        <thead>
+            <tr>
+                <th>Товары</th>
+                <th>Цена (KZT)</th>
+                <th>Другие виды</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Путевка в Турцию</td>
+                <td>250,000</td>
+                <td>Тур в Турцию на 7 дней, всё включено</td>
+            </tr>
+            <tr>
+                <td>Путевка в Египет</td>
+                <td>220,000</td>
+                <td>Тур в Египет на 7 дней, всё включено</td>
+            </tr>
+            <tr>
+                <td>Круиз по Средиземному морю</td>
+                <td>350,000</td>
+                <td>10-дневный круиз с посещением 5 стран</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Кнопка для возвращения на главную страницу -->
+    <a href="sbs.html" class="back-button">Назад на главную</a>
+</body>
+</html>

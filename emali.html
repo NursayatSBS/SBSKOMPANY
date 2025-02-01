@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эмали ПФ-115</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bcd4;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* Табы (секции товаров) */
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 50px;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInItem 1s forwards;
+        }
+
+        /* Анимация для появления товаров */
+        @keyframes fadeInItem {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-item i {
+            font-size: 50px;
+            color: #00bcd4;
+            margin-right: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .product-item:hover i {
+            color: #ff6f00;
+            transform: scale(1.2);
+        }
+
+        .product-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #00bcd4;
+        }
+
+        .order-button {
+            background-color: #ff6f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .order-button:hover {
+            background-color: #ff9800;
+        }
+
+        /* Для кнопки WhatsApp */
+        .whatsapp-button {
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Прайс-лист для Эмали ПФ-115</h1>
+
+    <div class="product-container">
+        <!-- Пример товара 1 -->
+        <div class="product-item">
+            <i class="fas fa-paint-roller"></i>
+            <div class="product-details">
+                <span class="product-name">Эмаль ПФ-115 0.5л</span>
+                <p class="product-description">Эмаль для покрытия металлических и деревянных поверхностей.</p>
+                <span class="product-price">1500 KZT</span>
+            </div>
+            <input type="checkbox" class="product-checkbox" value="Эмаль ПФ-115 0.5л - 1500 KZT">
+        </div>
+
+        <!-- Пример товара 2 -->
+        <div class="product-item">
+            <i class="fas fa-paint-roller"></i>
+            <div class="product-details">
+                <span class="product-name">Эмаль ПФ-115 1л</span>
+                <p class="product-description">Эмаль для внешних и внутренних работ. Отличное покрытие.</p>
+                <span class="product-price">2500 KZT</span>
+            </div>
+            <input type="checkbox" class="product-checkbox" value="Эмаль ПФ-115 1л - 2500 KZT">
+        </div>
+
+        <!-- Пример товара 3 -->
+        <div class="product-item">
+            <i class="fas fa-paint-roller"></i>
+            <div class="product-details">
+                <span class="product-name">Эмаль ПФ-115 3л</span>
+                <p class="product-description">Идеально подходит для крупных объектов.</p>
+                <span class="product-price">4500 KZT</span>
+            </div>
+            <input type="checkbox" class="product-checkbox" value="Эмаль ПФ-115 3л - 4500 KZT">
+        </div>
+    </div>
+
+   <!-- Кнопка WhatsApp для связи -->
+<a href="https://wa.me/77066882006?text=" id="whatsappButton" class="whatsapp-button">
+    Заказать прямо сейчас
+</a>
+
+
+<style>
+    /* Стиль кнопки WhatsApp */
+    .whatsapp-button {
+        background-color: #25d366;
+        color: #fff;
+        padding: 15px 35px;
+        font-size: 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease-out; /* плавный переход */
+        animation: float 3s ease-in-out infinite; /* анимация плавного колебания */
+    }
+
+    /* Плавное колебание (анимированное "плавание") */
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px); /* смещение вверх */
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Эффект при наведении: плавный рост кнопки */
+    .whatsapp-button:hover {
+        background-color: #128c7e;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px) scale(1.05); /* смещение вверх + плавное увеличение */
+    }
+
+    /* Дополнительные эффекты фокуса */
+    .whatsapp-button:focus {
+        outline: none;
+        box-shadow: 0 0 20px rgba(0, 180, 255, 0.6); /* фокусная тень */
+        transform: translateY(-5px); /* смещение вверх при фокусе */
+    }
+</style>
+
+
+
+    <script>
+        // Функция для обработки заказа и отправки в WhatsApp
+        function getSelectedProducts() {
+            const selectedProducts = [];
+            // Находим все выбранные чекбоксы
+            const checkboxes = document.querySelectorAll('.product-checkbox:checked');
+            
+            // Собираем выбранные товары в массив
+            checkboxes.forEach(checkbox => {
+                selectedProducts.push(checkbox.value);
+            });
+
+            // Проверяем, есть ли выбранные товары
+            if (selectedProducts.length > 0) {
+                // Формируем сообщение
+                let message = 'Здравствуйте!%0AЯ хочу заказать следующие товары:%0A';
+                selectedProducts.forEach(product => {
+                    message += `${product}%0A`;
+                });
+
+                // Составляем ссылку для WhatsApp
+                const whatsappUrl = `https://wa.me/77066882006?text=${encodeURIComponent(message)}`;
+                
+                // Устанавливаем ссылку для кнопки WhatsApp
+                document.getElementById('whatsappButton').href = whatsappUrl;
+            } else {
+                alert('Пожалуйста, выберите хотя бы один товар для заказа.');
+            }
+        }
+
+        // Добавляем обработчик событий на кнопку WhatsApp
+        document.getElementById('whatsappButton').addEventListener('click', function(event) {
+            // Если нет выбранных товаров, отменяем переход
+            if (document.querySelectorAll('.product-checkbox:checked').length === 0) {
+                event.preventDefault();
+                alert('Пожалуйста, выберите товары для заказа.');
+            }
+        });
+    </script>
+
+<button>
+    <a href="sbs.html" style="text-decoration: none; color: #121212;">Главную</a>
+</button
+
+</body>
+</html>

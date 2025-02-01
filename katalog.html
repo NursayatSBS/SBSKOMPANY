@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            opacity: 0;
+            animation: fadeIn 1s forwards; /* Анимация для появления страницы */
+        }
+
+        /* Анимация для появления страницы */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #00bcd4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            animation: slideUp 1s ease-out forwards; /* Анимация для заголовка */
+        }
+
+        /* Анимация для заголовка */
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .catalog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .catalog-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            animation: fadeInItem 1s forwards;
+        }
+
+        /* Анимация для карточек */
+        @keyframes fadeInItem {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .catalog-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .catalog-item i {
+            font-size: 50px;
+            color: #00bcd4;
+            margin-bottom: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        /* Эффект на иконки при наведении */
+        .catalog-item:hover i {
+            color: #ff6f00;
+            transform: scale(1.2);
+        }
+
+        .catalog-item h3 {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .catalog-item p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Стили для ссылок */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Каталог товаров</h1>
+
+    <div class="catalog-container">
+        <!-- Эмали ПФ-115 -->
+        <a href="emali.html" class="catalog-item">
+            <i class="fas fa-paint-roller"></i>
+            <h3>Эмали ПФ-115</h3>
+            <p>Высококачественные эмали для различных поверхностей.</p>
+        </a>
+
+        <!-- Растворители 646-647 -->
+        <a href="rasstvoriteli.html" class="catalog-item">
+            <i class="fas fa-flask"></i>
+            <h3>Растворители 646-647</h3>
+            <p>Растворители для краски и других материалов.</p>
+        </a>
+
+        <!-- Водоэмульсий -->
+        <a href="vodooemulsiy.html" class="catalog-item">
+            <i class="fas fa-tint"></i>
+            <h3>Водоэмульсий</h3>
+            <p>Покрытия для внутренних и наружных работ.</p>
+        </a>
+
+        <!-- Малярные инструменты -->
+        <a href="malyarnye-instrumenty.html" class="catalog-item">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Малярные инструменты</h3>
+            <p>Все для качественного нанесения покрытия.</p>
+        </a>
+
+        <!-- Монтажные инструменты -->
+        <a href="montazhnie-instrumenty.html" class="catalog-item">
+            <i class="fas fa-hammer"></i>
+            <h3>Монтажные инструменты</h3>
+            <p>Инструменты для монтажа и ремонта.</p>
+        </a>
+
+        <!-- Клей -->
+        <a href="klej.html" class="catalog-item">
+            <i class="fas fa-glue"></i>
+            <h3>Клей</h3>
+            <p>Клей для различных строительных и ремонтных работ.</p>
+        </a>
+
+        <!-- Прочее -->
+        <a href="prochee.html" class="catalog-item">
+            <i class="fas fa-cogs"></i>
+            <h3>Прочее</h3>
+            <p>Разные товары для ремонта и строительства.</p>
+        </a>
+    </div>
+
+</body>
+</html>

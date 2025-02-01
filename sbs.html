@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBS Сапар</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Основные стили страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: aquamarine;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            clip-path: ellipse(66%);
+            box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5);
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: cyan;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: aquamarine;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: cyan;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .icon-container i {
+            font-size: 40px;
+            color: white;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .icon-container i:hover {
+            transform: scale(1.2);
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ПРАЙС ЛИСТ НА 2025-2026</h1>
+        <p>ПО САМЫМ НИЗКИМ ЦЕНАМ</p>
+        <!-- Измененная кнопка: Переход на таблицу -->
+        <button>
+    <a href="katalog.html" style="text-decoration: none; color: #121212;">Каталог</a>
+</button>
+<button>
+            <a href="table.html" style="text-decoration: none; color: black;">Перейти к таблице</a>
+        </button>
+
+        <!-- Иконки для таблицы -->
+        <div class="icon-container">
+            <i class="fas fa-table"></i> 
+            <i class="fas fa-chart-bar"></i>
+            <i class="fas fa-clipboard-list"></i>
+        </div>
+    </div>
+</body>
+</html>
